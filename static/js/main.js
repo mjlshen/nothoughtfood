@@ -3,6 +3,9 @@ $(document).ready(function() {
 	$('.mhacksLogo').click( function() {
 		window.location='https://github.com/mjlshen/time2eat';
 	});
+	$('.blogLink').click( function() {
+		window.location='https://faiyafrower.blogspot.com/';
+	});
 	$(".listRecipes").animate({'top': '+=30'}, 200);
 	$("#infoButton").click( function() {
 		$("#infoButton").animate({"right": "-=25"}, 500);

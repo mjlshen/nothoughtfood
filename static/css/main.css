@@ -12,11 +12,11 @@ h2 div, p {
 	border-top: 2px solid #FFF;
 	border-top-left-radius: 10px;
 	bottom: 0;
-	height: 160px;
+	height: 190px;
 	position: fixed;
 	right: -192px;
 	transition: border-color .3s ease-in-out;
-	width: 190px;
+	width: 110px;
 }
 
 #infoBox:hover {
@@ -183,25 +183,26 @@ h2 div, p {
 
 
 .blogLink {
-	bottom: 5px;
-	font-size: 18pt;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	font-family: 'Nixie One', cursive;
-	transition: color .3s ease-in-out;
+	cursor: pointer;
 	-moz-transition: background-image .3s ease-in-out;
 	-webkit-transition: background-image .3s ease-in-out;
-	-moz-transition: color .3s ease-in-out;
-	-webkit-transition: color .3s ease-in-out;
-}
-
-.breaklink:hover {
-	color: #E1911D;
+	background-image: url(../images/bloggersmall1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 65px;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 20px;
+	transition: background-image .3s ease-in-out;
+	width: 68px;
+	margin: 0 auto;
+	padding: 10px;
 }
 
 .blogLink:hover {
-	color: #E1911D;
+	background-image: url(../images/bloggersmall2.png);
 }
 
 .mhacksLogo {
@@ -216,7 +217,7 @@ h2 div, p {
 	left: 0;
 	position: relative;
 	right: 0;
-	top: 30px;
+	top: 20px;
 	transition: background-image .3s ease-in-out;
 	width: 68px;
 	margin: 0 auto;
