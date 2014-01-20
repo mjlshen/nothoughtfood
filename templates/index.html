@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
@@ -24,7 +24,7 @@
 	<div id="infoBox">
 		<div class="closeBox"></div>
 		<div class="mhacksLogo"></div>
-		<div class="blogLink"><a href="http://faiyafrower.blogspot.com/">Michael Shen</a></div>
+		<div class="blogLink"><a href="http://faiyafrower.blogspot.com/"><b>Blog</b></a></div>
 	</div>
 	</body>
 </html>
