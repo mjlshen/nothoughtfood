@@ -1,9 +1,13 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
 import os, csv
 
 app = Flask(__name__)
 
 recipes = {key: value for key, value in csv.reader(open("recipes"))}
+
+@app.route('/favicon.ico')
+def favicon():
+	return send_from_directory(os.path.join(app.root_path, 'static', 'images'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route('/', methods=['GET', 'POST'])
 def findRecipe():
