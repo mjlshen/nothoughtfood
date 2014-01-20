@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	document.form.inputTime.focus();
 	$('.mhacksLogo').click( function() {
-		window.location='http://www.mhacks.org/';
+		window.location='https://github.com/mjlshen/time2eat';
 	});
 	$(".listRecipes").animate({'top': '+=30'}, 200);
 	$("#infoButton").click( function() {

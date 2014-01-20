@@ -188,6 +188,7 @@ h2 div, p {
 	position: absolute;
 	text-align: center;
 	width: 100%;
+	font-family: 'Nixie One', cursive;
 	transition: color .3s ease-in-out;
 	-moz-transition: background-image .3s ease-in-out;
 	-webkit-transition: background-image .3s ease-in-out;
