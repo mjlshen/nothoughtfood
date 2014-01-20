@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<meta charset="utf-8">
+		<title>timetoeat!</title>
+	</head>
+	<body>
+		<form name="form" method="post">
+			<input type="text" class="inputBox" name="inputAnagrams">
+			<input type="hidden" name="previousAnagrams" value="{{ anagrams }}">
+		</form>
+	<div id="wordContainer">
+		<div class={% if static %}"listAnagrams_static"{% else %}"listAnagrams"{% endif %}>{{ anagrams|safe }}</div>
+	</div>
+	<div id="infoButton">i</div>
+	<div id="otherMeal">When's the next meal?</div>
+	<div id="mealChoice">
+		<div class="instructions">Enter queries as minutes, then b, l, or d for breakfast, lunch, or dinner</div>
+	</div>
+	<div id="infoBox">
+		<div class="closeBox"></div>
+		<div class="mhacksLogo"></div>
+		<div class="blogLink"><a href="http://faiyafrower.blogspot.com/">Michael Shen</a></div>
+	</div>
+	</body>
+</html>
