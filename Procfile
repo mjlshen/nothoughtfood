@@ -1,1 +1,1 @@
-web: python dealscraper/time2eat.py
+web: python time2eat.py
