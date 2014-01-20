@@ -6,17 +6,17 @@ app = Flask(__name__)
 recipes = {key: value for key, value in csv.reader(open("recipes"))}
 
 @app.route('/', methods=['GET', 'POST'])
-def unscrambleWord():
+def findRecipe():
 	if request.method == 'GET':
 		return render_template('index.html')
 	if request.method == 'POST':
 		try:
-			inputAnagrams = recipes[(''.join([i for i in request.form['inputAnagrams']]))]
+			inputTime = recipes[(''.join([i for i in request.form['inputTime']]))]
 		except KeyError:
-			return render_template('index.html', anagrams = request.form['previousAnagrams'], static = True)
-		if request.form['previousAnagrams'] == '':
-			return render_template('index.html', anagrams = inputAnagrams.replace(',', ', '), static = False)
-		return render_template('index.html', anagrams = inputAnagrams.replace(',', ', ') + "<hr>" + request.form['previousAnagrams'], static = False)
+			return render_template('index.html', recipes = request.form['previousRecipes'], static = True)
+		if request.form['previousRecipes'] == '':
+			return render_template('index.html', recipes = inputTime.replace(',', ', '), static = False)
+		return render_template('index.html', recipes = inputTime.replace(',', ', ') + "<hr>" + request.form['previousRecipes'], static = False)
 
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 5000))
