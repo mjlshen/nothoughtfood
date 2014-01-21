@@ -23,7 +23,7 @@ h2 div, p {
 	border-color: #E1911D;
 }
 
-#infoBox:hover .mhacksLogo {
+.mhacksLogo:hover {
 	background-image: url(../images/mhackssmall3.png);
 }
 
