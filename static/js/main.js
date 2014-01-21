@@ -16,9 +16,9 @@ $(document).ready(function() {
 		$("#infoBox").animate({"right": "-=192"}, 500);
 	});
 	$("#otherMeal").click( function() {
-		$("#mealChoice").animate({"top": "+=100"}, 500);
+		$("#mealChoice").animate({"top": "+=80"}, 500);
 	});
 	$("#mealChoice").click( function() {
-		$("#mealChoice").animate({"top": "-=100"}, 500);
+		$("#mealChoice").animate({"top": "-=80"}, 500);
 	});
 });
