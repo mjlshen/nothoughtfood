@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+		<!--<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">-->
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 		<meta charset="utf-8">
 		<title>Time2eat</title>
 	</head>
 	<body>
-		<form name="form" method="post">
-			<input type="text" class="inputBox" name="inputTime">
-			<input type="hidden" name="previousRecipes" value="{{ recipes }}">
-		</form>
-	<div id="recipeContainer">
-		<div class={% if static %}"listRecipes_static"{% else %}"listRecipes"{% endif %}>{{ recipes|safe }}</div>
-	</div>
 	<div id="infoButton">i</div>
-	<div id="otherMeal"><b>When's the next meal?</b></div>
-	<div id="mealChoice">
-		<div class="instructions">Enter queries as minutes, then b, l, or d for breakfast, lunch, or dinner</div>
-	</div>
+	<div id="otherMeal"><b>What's the next meal?</b></div>
+	<div id="choiceBox">
+		<div class="breakLink"></div>
+		<div class="lunchLink"></div>
+		<div class="dinnerLink"><div>
+	<div>
 	<div id="infoBox">
 		<div class="closeBox"></div>
 		<div class="mhacksLogo"></div>
