@@ -25,4 +25,8 @@ Future Improvement
 
 2. Improve database to include more than one recipe per time/meal option. This would involve creating a new database, or altering the search function to allow more than one result per input. I would need to learn either method as I do not know how to do this at the moment.
 
-3. Realize my initial goal to allow ingredient-to-recipe functionality. This would build upon the database and would probably require a separate search function. This currently seems out of my reach, but if I achieve the second step, this may be reasonable.
+3. Create and implement some data mining tool so that I do not have to manually scrape recipes, as this is both time consuming and prone to errors that could largely be eliminated through an automated tool, resulting in a larger database of possible recipes.
+
+4. Realize my initial goal to allow ingredient-to-recipe functionality. This would build upon the database and would probably require a separate search function. This would especially build upon goals two and three.
+
+5. Allow users to input their own recipes. No data mining tool can accrue all recipes, only the ones I tell it to look for. There are some very unique recipes that would only be discovered in this manner. If I get to here, I can probably begin to monetize the app.
