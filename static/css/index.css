@@ -1,0 +1,264 @@
+@import url('http://fonts.googleapis.com/css?family=Nixie+One');
+h2 div, p {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#choiceBox {
+	-moz-transition: border-color .3s ease-in-out;
+	-webkit-transition: border-color .3s ease-in-out;
+	background-color: rgba(256,256,256,0.3);
+	border-left: 2px solid #FFF;
+	border-top: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	top: 200px;
+	height: 200px;
+	transition: border-color .3s ease-in-out;
+	width: 40%;
+}
+
+.breakLink {
+	cursor: pointer;
+	-moz-transition: background-image .3s ease-in-out;
+	-webkit-transition: background-image .3s ease-in-out;
+	background-image: url(../images/breakfast.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 100px;
+	left: 0;
+	position: absolute;
+	right: 400px;
+	top: 50px;
+	transition: background-image .3s ease-in-out;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.lunchLink {
+	cursor: pointer;
+	-moz-transition: background-image .3s ease-in-out;
+	-webkit-transition: background-image .3s ease-in-out;
+	background-image: url(../images/lunch.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 100px;
+	left: 0;
+	position: relative;
+	right: +200px;
+	top: +50px;
+	transition: background-image .3s ease-in-out;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.dinnerLink {
+	cursor: pointer;
+	-moz-transition: background-image .3s ease-in-out;
+	-webkit-transition: background-image .3s ease-in-out;
+	background-image: url(../images/dinner.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 100px;
+	left: +200px;
+	position: relative;
+	right: 0px;
+	top: -70px;
+	transition: background-image .3s ease-in-out;
+	width: 100px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#infoBox {
+	-moz-transition: border-color .3s ease-in-out;
+	-webkit-transition: border-color .3s ease-in-out;
+	background-color: rgba(0,0,0,0.7);
+	border-left: 2px solid #FFF;
+	border-top: 2px solid #FFF;
+	border-top-left-radius: 10px;
+	bottom: 0;
+	height: 190px;
+	position: fixed;
+	right: -192px;
+	transition: border-color .3s ease-in-out;
+	width: 110px;
+}
+
+#infoBox:hover {
+	border-color: #E1911D;
+}
+
+.mhacksLogo:hover {
+	background-image: url(../images/mhackssmall3.png);
+}
+
+#infoBox:hover .closeBox, .closeBox:hover {
+	background-color: #E1911D;
+}
+
+#infoButton {
+	-moz-transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	bottom: 13px;
+	color: #FFF;
+	cursor: default;
+	font-size: 28pt;
+	height: 28px;
+	opacity: 0.7;
+	font-style: italic;
+	position: fixed;
+	right: 10px;
+	transition: color .3s ease-in-out;
+	width: 12px;
+}
+
+#infoButton:hover, a:hover {
+	color: #B75D09;
+}
+
+#otherMeal {
+	-moz-transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	top: 13px;
+	color: #FFF;
+	cursor: default;
+	font-size: 28pt;
+	font-family: 'Nixie One', cursive;
+	height: 28px;
+	opacity: 0.7;
+	position: fixed;
+	text-align: center;
+	margin-right: 17.5%;
+	transition: color .3s ease-in-out;
+	width: 100%;
+}
+
+#otherMeal:hover, a:hover {
+	color: #E1911D;
+}
+
+.closeChoice, .closeChoice:hover {
+	background-color: #E1911D;
+}
+
+.closeChoice {
+	-moz-transition: background-color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+	background-color: #FFF;
+	border-bottom-right-radius: 5.85px;
+	border-top-left-radius: 5.85px;
+	height: 20px;
+	left: -2px;
+	position: absolute;
+	top: -2px;
+	transition: background-color .3s ease-in-out;
+	width: 20px;
+}
+
+.closeBox {
+	-moz-transition: background-color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+	background-color: #FFF;
+	border-bottom-right-radius: 5.85px;
+	border-top-left-radius: 5.85px;
+	height: 20px;
+	left: -2px;
+	position: absolute;
+	top: -2px;
+	transition: background-color .3s ease-in-out;
+	width: 20px;
+}
+
+
+.blogLink {
+	cursor: pointer;
+	-moz-transition: background-image .3s ease-in-out;
+	-webkit-transition: background-image .3s ease-in-out;
+	background-image: url(../images/bloggersmall1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 65px;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 20px;
+	transition: background-image .3s ease-in-out;
+	width: 68px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.blogLink:hover {
+	background-image: url(../images/bloggersmall2.png);
+}
+
+.mhacksLogo {
+	cursor: pointer;
+	-moz-transition: background-image .3s ease-in-out;
+	-webkit-transition: background-image .3s ease-in-out;
+	background-image: url(../images/mhackssmall1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 90px;
+	height: 65px;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 20px;
+	transition: background-image .3s ease-in-out;
+	width: 68px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.mhacksLogo:hover {
+	background-image: url(../images/mhackssmall3.png);
+}
+
+.listRecipes, .listRecipes_static {
+	left: 0;
+	padding-top: 0;
+	padding-bottom: 30px;
+	position: absolute;
+	right: 0;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.listRecipes_static {
+	top: 30px;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	transition: color .3s ease-in-out;
+}
+
+a:visited {
+	color: #FFF;
+}
+
+body {
+	background-image: url(../images/light_wood.jpg);
+	overflow-y: hidden;
+}
+
+hr {
+	width: 20px;
+	opacity: 0.3;
+}
